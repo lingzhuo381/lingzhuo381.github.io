@@ -1,541 +1,1441 @@
+<!-- TODO:
+add small image near tashi written at top of website
+add carousel of certificate images with text on it at the bottom 
+see if need to collapse resume matter when on mobile device
+diamond that appears at top overlaps text on mobile devices -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <title>Tashi Jain - Personal Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-  <!--
-    File: index.html
-    Jason Downing
-    Contact: jason@downing.io
-    MIT Licensed - see http://opensource.org/licenses/MIT for details.
-    Anyone may freely use this code. Just don't sue me if it breaks stuff.
-    Created: September 3rd, 2015.
-    Last Updated: March 28th, 2019
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
 
-    Jason Downing's personal website. This site has information about him,
-    details about his education, skills, and links to his GitHub and LinkedIn
-    Profiles. This site is hosted on GitHub Pages.
-  -->
+    <link rel="stylesheet" href="css/aos.css">
 
-  <!-- Custom Title Bar -->
-  <title>Jason Downing</title>
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>T</span>ashi</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
 
-  <!-- Bootstrap Core CSS -->
-  <!-- 6/15/2018: Updated to the latest version of Bootstrap (4.1.1) -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-  <!-- Custom Fonts -->
-  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
-  rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
-  rel='stylesheet' type='text/css'>
-
-  <!-- Plugin CSS -->
-  <link href="css/magnific-popup.css" rel="stylesheet">
-
-  <!-- Theme CSS -->
-  <link href="css/creative.min.css" rel="stylesheet">
-
-  <!-- Index CSS -->
-  <link href="css/index.css" rel="stylesheet">
-
-  <!-- Custom favicon -->
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-
-  <!-- Google Analytics Tracking Tag. Track how people access my site and such.
-       (assuming they don't block ads or whatever from Google) -->
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-68657454-1', 'auto');
-    ga('send', 'pageview');
-  </script>
-
-</head>
-
-<body id="page-top">
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-    <div class="container">
-
-      <!-- Updated with latest Creative -->
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Jason Downing</a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" 
-              data-toggle="collapse" data-target="#navbarResponsive" 
-              aria-controls="navbarResponsive" aria-expanded="false" 
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">Education</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#work">Work</a>
-          </li>
-					<li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#funstuff">Fun</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#github">GitHub</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="img/resume.pdf">Resume</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!--  Intro Section
-
-        Header image found at the following URL:
-        https://upload.wikimedia.org/wikipedia/commons/f/f5/Free-ride.jpg
-   -->
-  <header class="masthead text-center text-white d-flex">
-    <div class="container my-auto">
-      <div class="row">
-        <div class="col-lg-10 mx-auto">
-          <h1 class="text-uppercase">
-            <strong>Jason Downing</strong>
-          </h1>
-          <hr>
-        </div>
-        <div class="col-lg-8 mx-auto">
-          <p class="text-faded mb-5">Mountain Biker. Skier. UMass Lowell Graduate.</p>
-          <p class="text-italic mb-5">
-            Software Engineer II</a>
-          </p>
-          <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More!</a>
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#services-section" class="nav-link"><span>Skills</span></a></li>
+			  <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+			  <!-- <li class="nav-item"><a href="#certificates-section" class="nav-link"><span>Certificates</span></a></li> -->
+	          <li class="nav-item"><a href="#blog-section" class="nav-link"><span>Blog</span></a></li>
+	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <section class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+          		<span class="subheading">Hello World! I am</span>
+		  				<h1>Tashi Jain</h1>
+			  				<h2>I'm a 
+								  <span
+								     class="txt-rotate"
+								     data-period="2000"
+								     data-rotate='[ "Tech enthusiast.", "Front-End Web Developer.", "Mobile Developer.", "Woman in Tech."]'></span>
+								</h2>
+							</div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-
-  <!-- Education Section -->
-  <section class="bg-primary" id="about">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center mb-4"">
-          <h2 class="section-heading text-white">Education</h2>
-          <hr class="light my-4">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4"">
-          <i class="fa fa-4x fa-id-card-o text-faded sr-icons"></i>
-          <h3 class="text-white">Degree</h3>
-          <p class="text-faded">Bachelor of Science in Computer Science from
-          <a class="text-white-link" href="https://www.uml.edu/" class="text-blue">UMass Lowell</a></p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center div-padding-fix mb-4"">
-          <i class="fa fa-4x fa-graduation-cap text-faded sr-icons"></i>
-          <h3 class="text-white">Graduation</h3>
-          <p class="text-faded">Graduated in May 2017 with Latin Honors</p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4"">
-          <i class="fa fa-4x fa-code text-faded sr-icons"></i>
-          <h3 class="text-white">Languages</h3>
-          <p class="text-faded no-margin">C#, JavaScript, Java</p>
-          <p class="text-faded">Python, and C / C++</p>
-        </div>
-
-        <div class="col-lg-3 col-md-6 col-sm-6 text-center mb-4"">
-          <i class="fa fa-4x fa-file-code-o text-faded sr-icons"></i>
-          <h3 class="text-white">Skills</h3>
-          <p class="text-faded no-margin">C# .NET Back end</p>
-          <p class="text-faded">HTML5 Front end</p>
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 text-center">
-          <a class="btn btn-light btn-xl js-scroll-trigger" href="#work">Wait There's More!</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Work Experience Section. -->
-  <section id="work">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Work</h2>
-          <hr class="primary">
-        </div>
-				<div class="col-sm-12 text-center mt-4 mb-4"">
-          <i class="fa fa-4x fa-rocket text-primary sr-icons"></i>
-          <h3 class="mt-4 mb-4">Software Engineer II</h3>
-          <p class="text-muted">August 2019 to Present: <span class="RtnRed">Raytheon</span></p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <i class="fa fa-4x fa-fighter-jet text-primary sr-icons"></i>
-          <h3 class="mt-4 mb-4">System Engineer II</h3>
-          <p class="text-muted">April 2018 to August 2019: BAE Systems</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <i class="fa fa-4x fa-truck text-primary sr-icons"></i>
-          <h3 class="mt-4 mb-4">Software Developer</h3>
-          <p class="text-muted">July 2017 to April 2018: Creative Logistics Solutions (CLS)</p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <!-- TIL: Bootstrap has awesome spacing classes
-                    https://getbootstrap.com/docs/4.0/utilities/spacing/ -->
-          <i class="fa fa-4x fa-android text-primary sr-icons"></i>
-          <i class="fa fa-4x fa-server text-primary sr-icons ml-4"></i>
-          <h3 class="mt-4 mb-4">Technical Intern</h3>
-          <p class="text-muted mb-4">Summer 2015: Fidelity Institutional (FI)</p>
-          <p class="text-muted mb-5">Summer 2016: Fidelity Personal Investing (PI) </p>
-        </div>
-        <div class="col-lg-3 col-sm-6 text-center">
-          <i class="fa fa-4x fa-pied-piper text-primary sr-icons"></i>
-          <h3 class="mt-4 mb-4">Research Assistant</h3>
-          <p class="text-muted">Summer 2014: UMass Lowell's Engaging Computing Group Research Lab</p>
-        </div>
-      </div>
-      <div class="text-center">
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#funstuff">
-        Boring, show me some fun stuff!</a>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Some fun stuff, leave the boring code for last. -->
-  <section class="bg-green" id="funstuff">
-    <div class="container-fluid">
-      <div class="row images-vcenter">
-			
-				<div class="col-lg-12 pb-3 text-center">
-          <h2 class="section-heading">Fun Stuff</h2>
-          <hr class="hr-black">
-        </div>
-			
-				<!-- Fun stuff includes links to Mountain Biking, Skiing and Spotify playlists -->
-				<div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="https://downing.io/Mountain-Biking/">
-						<img src="img/portfolio/thumbnails/mtn-biking.jpg" 
-								 class="img-fluid images-border"
-								 alt="Mountain Biking">
-					</a>
-          <h3 class="mt-4 mb-4">Mountain Biking</h3>
-        </div>
-			
-				<div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="https://downing.io/Skiing/">
-						<img src="img/portfolio/thumbnails/skiing.jpg" 
-								 class="img-fluid images-border-skiing" 
-								 alt="SKIING!">
-					</a>
-          <h3 class="mt-4 mb-4">SKIING!</h3>
-        </div>
-				
-				<div class="col-lg-4 col-sm-6 text-center">
-          <a class="href-black" href="https://downing.io/Spotify/">
-						<img src="img/portfolio/thumbnails/spotify.png" 
-								 class="img-fluid"
-								 alt="Spotify Playlists!">
-					</a>
-          <h3 class="mt-4 mb-4">Spotify Playlists!</h3>
-        </div>
-				
+      <div class="mouse">
+				<a href="#" class="mouse-icon">
+					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+				</a>
 			</div>
-			<div class="text-center">
-        <a class="btn btn-black btn-xl js-scroll-trigger" href="#github">
-        Cool, show me the <&nbsp;&frasl;&nbsp;CODE&nbsp;></a>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+    	<div class="container">
+    		<div class="row d-flex no-gutters">
+    			<div class="col-md-6 col-lg-6 d-flex">
+    				<div class="img-about img d-flex align-items-stretch">
+    					<div class="overlay"></div>
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/introimg.jpeg);">
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+    				<div class="row justify-content-start pb-3">
+		          <div class="col-md-12 heading-section ftco-animate">
+		          	<h1 class="big">About</h1>
+					<h2 class="mb-4">About Me</h2>
+					
+					<!-- <ul class="about-info mt-4 px-md-0 px-2 list-unstyled">
+		            	<li id="contact-icon" class="d-flex ftco-animate"><a href="https://www.linkedin.com/in/tashijain88/" target="_blank"><span class="icon-linkedin"></span></a></li>
+						<li id="contact-icon" class="d-flex ftco-animate"><a href="https://www.github.com/tashijain/" target="_blank"><span class="icon-github"></span></a></li>
+						<li id="contact-icon" class="d-flex ftco-animate"><a href="https://www.facebook.com/tashjain88/" target="_blank"><span class="icon-facebook"></span></a></li>
+						<li id="contact-icon" class="d-flex ftco-animate"><a href="https://www.instagram.com/tashjain88/" target="_blank"><span class="icon-instagram"></span></a></li>
+		            	<li id="contact-icon" class="d-flex ftco-animate"><a href="mailto:tashjain88@gmail.com"><span class="icon icon-envelope"></span></a></li>
+					</ul> -->
+					<p id="about-socials"><ul class="ftco-footer-social list-unstyled">
+						<li id="contact-icon" class="ftco-animate"><a href="https://www.linkedin.com/in/tashijain88/" target="_blank"><span class="icon-linkedin"></span></a></li>
+						<li id="contact-icon" class="ftco-animate"><a href="https://www.github.com/tashijain/" target="_blank"><span class="icon-github"></span></a></li>
+						<li id="contact-icon" class="ftco-animate"><a href="https://www.facebook.com/tashjain88/" target="_blank"><span class="icon-facebook"></span></a></li>
+						<li id="contact-icon" class="ftco-animate"><a href="https://www.instagram.com/tashjain88/" target="_blank"><span class="icon-instagram"></span></a></li>
+						<li id="contact-icon" class="ftco-animate"><a href="mailto:tashjain88@gmail.com" target="_blank"><span class="icon-envelope"></span></a></li>
+
+					</ul></p>
+					
+					<p class="text-justify">My eyes staring at the code, my heart beating fast, my mind in a
+						state of enigma, and my fingers ready to click through the keys at any moment - that’s been
+						my relation to computers ever since I first studied Computer Science in high school.</p>
+					<p class="text-justify">Hi! I'm <b>Tashi</b>, a rising junior at the University of British Columbia,
+							Vancouver, Canada. In my sophomore year of university, I co-founded and led as President a
+							Women in Computer Science club at UBC. I've worked several semesters as a teaching
+							assistant since my very first year of university.</p>
+					<p class="text-justify">To me, CS is a never-ending journey of
+							learning and growth with its unique ability to create tangible impact on tremendous scales
+							across various sectors and realms of our daily existence. The versatility and problem-solving
+							aspect of CS never fail to amaze me. I'm a curious learner. I'm continuously learning, falling,
+							learning. I believe there's something I learn from each person, every day of my life
+							which helps me build a growth mindset.</p>
+		          </div>
+		        </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
+              <div class="text">
+              	<p class="mb-4">
+	                <span class="number" data-number="15">0</span>
+	                <span>Projects completed</span>
+                </p>
+				<p><a href="./files/Jain_Tashi_Resume.pdf" class="btn btn-primary py-3 px-3" target="_blank">Download Resume</a></p>
+              </div>
+	          </div>
+	        </div>
+        </div>
+    	</div>
+    </section>
+
+	<!-- <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+    	<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8 ftco-animate text-center">
+						<h2>Open for <span>Summer 2021</span> software engineering roles</h2>
+						<p class="mb-0"><a href="mailto:tashjain88@gmail.com" class="btn btn-primary py-3 px-5">Get in Touch</a></p>
+					</div>
+				</div>
+			</div>
+		</section> -->
+    <!-- <section class="ftco-section ftco-partner">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="images/partner-1.png" class="img-fluid" alt="Microsoft"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="images/partner-2.png" class="img-fluid" alt="Android"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="images/partner-3.png" class="img-fluid" alt="Java"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="images/partner-4.png" class="img-fluid" alt="Google"></a>
+    			</div>
+    			<div class="col-sm ftco-animate">
+    				<a href="#" class="partner"><img src="images/partner-5.png" class="img-fluid" alt="Adobe"></a>
+    			</div>
+    		</div>
+    	</div>
+    </section> -->
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-3">
+				    <nav id="navi">
+					    <ul>
+					      <li><a href="#page-1">Education</a></li>
+					      <li><a href="#page-2">Experience</a></li>
+						  <!-- <li><a href="#page-3">Skills</a></li> -->
+						  <li><a href="#page-4">Awards</a></li>
+						  <li><a href="#page-5">Coursework</a></li>
+						  <li><a href="#page-6">Extracurriculars</a></li>
+					    </ul>
+					  </nav>
+					</div>
+					<div class="col-md-9">
+					  <div id="page-1" class= "page one">
+					  	<h2 class="heading">Education</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018-2022</span>
+		    					<h2>Bachelor of Science in Computer Science</h2>
+		    					<span class="position">University of British Columbia, Vancouver, Canada</span>
+								<ul class="list-inline">
+									<li class="list-inline-item"><b>GPA:</b> 4.0/4.0</li>
+									<li class="list-inline-item"><b>Major:</b> Computer Science</li>
+									<li class="list-inline-item">Dean's Honor List</li>
+									<li class="list-inline-item">Science Scholar</li>
+									<li class="list-inline-item"><b>Founder &amp; President:</b> UBC Women in Computer Science</li>	
+								</ul>
+							</div>
+	    				</div>
+	    				
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2004-2018</span>
+		    					<h2>High School Diploma</h2>
+		    					<span class="position">Convent of Jesus and Mary, India</span>
+								<ul class="list-inline">
+									<li class="list-inline-item"><b>Grade 12:</b> 98%</li>
+									<li class="list-inline-item"><b>Grade 10:</b> 97%</li>
+								</ul>
+							</div>
+	    				</div>
+					  </div>
+
+					  <div id="page-2" class= "page two">
+					  	<h2 class="heading">Experience</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Jan 2019 - Jan 2020</span>
+		    					<h2>Undergraduate Computer Science Teaching Assistant</h2>
+		    					<span class="position">University of British Columbia</span>
+								<ul>
+									<li>1 of only 3 first year teaching assistants referred by professor.</li>
+									<li>Collaborated with the course coordinator, instructors, and fellow TAs.</li>
+									<li>Focused guidance to students struggling through core concepts.</li>
+									<li>Reviewing student code &amp; providing constructive feedback.</li>
+									<li>Attend weekly meetings to suggest techniques for effective learning.</li>
+									<li>Executed multiple weekly 3 hours labs, of about 30 students each.</li>
+									<li>Mentored students to design, implement, test &amp; debug their code.</li>
+									<li>Guided students to adopt good coding habits.</li>
+									<li>Streamlined office hours switching between one-on-one &amp; group interactions.</li>
+									<li>Graded midterms, final exams, &amp; assignments in a timely manner.</li>
+									<li>Build an inclusive environment for open discussions.</li>
+								</ul>
+							</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">Sept 2019 - Dec 2019</span>
+		    					<h2>Undergraduate Computer Science Course Developer</h2>
+								<span class="position">University of British Columbia</span>
+								<ul>
+									<li>Selected by professor to add improvements to UBC's introductory CS course.</li>
+									<li>Developed series of multiple-choice quizzes using Alchemy.</li>
+									<li>Generated intuitive paths to the right answer.</li>
+								</ul>
+							</div>
+	    				</div>
+					  </div>
+
+					  <!-- <div id="page-3" class= "page three">
+					  	<h2 class="heading">Skills</h2>
+					  	<div class="row progress-circle mb-5">
+					  		<div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Full Stack</h2>
+
+						       
+						        <div class="progress mx-auto" data-value='85'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">85<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						       
+
+						        <div class="row text-center mt-4">
+						          <div class="col-6 border-right">
+									<div class="h4 font-weight-bold mb-0">90%</div>
+									<span class="small text-gray">Front-end</span>
+						          </div>
+						          <div class="col-6">
+									<div class="h4 font-weight-bold mb-0">65%</div>
+									<span class="small text-gray">Server-side</span>
+						          </div>
+								</div>
+								
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">iOS</h2>
+
+						        
+						        <div class="progress mx-auto" data-value='65'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">65<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						       
+						        <div class="row text-center mt-4">
+									<div class="col-6 border-right">
+										<div class="h4 font-weight-bold mb-0">70%</div>
+										<span class="small text-gray">Swift 5</span>
+									  </div>
+									  <div class="col-6">
+										<div class="h4 font-weight-bold mb-0">60%</div>
+										<span class="small text-gray">SwiftUI</span>
+									  </div>
+						        </div>
+						       
+						      </div>
+						    </div>
+
+						    <div class="col-lg-4 mb-4">
+						      <div class="bg-white rounded-lg shadow p-4">
+						        <h2 class="h5 font-weight-bold text-center mb-4">Android</h2>
+
+						       
+						        <div class="progress mx-auto" data-value='70'>
+						          <span class="progress-left">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <span class="progress-right">
+                        <span class="progress-bar border-primary"></span>
+						          </span>
+						          <div class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+						            <div class="h2 font-weight-bold">70<sup class="small">%</sup></div>
+						          </div>
+						        </div>
+						       
+						        <div class="row text-center mt-4">
+						          <div class="col-6 border-right">
+									<div class="h4 font-weight-bold mb-0">90%</div>
+									<span class="small text-gray">Java</span>
+						          </div>
+						          <div class="col-6">
+									<div class="h4 font-weight-bold mb-0">50%</div>
+									<span class="small text-gray">Kotlin</span>
+						          </div>
+						        </div>
+						        
+						      </div>
+						    </div>
+					  	</div>
+					  	<div class="row">
+					  		<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Java</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-1" role="progressbar" aria-valuenow="95"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:95%">
+										    <span>95%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Python</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-2" role="progressbar" aria-valuenow="75"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:75%">
+										    <span>75%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>C++/C</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+										    <span>70%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>React & JavaScript</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-4" role="progressbar" aria-valuenow="80"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:80%">
+										    <span>80%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>Swift</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-5" role="progressbar" aria-valuenow="70"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:70%">
+										    <span>70%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-6 animate-box">
+									<div class="progress-wrap ftco-animate">
+										<h3>CSS, HTML</h3>
+										<div class="progress">
+										 	<div class="progress-bar color-6" role="progressbar" aria-valuenow="90"
+										  	aria-valuemin="0" aria-valuemax="100" style="width:90%">
+										    <span>90%</span>
+										  	</div>
+										</div>
+									</div>
+								</div>
+					  	</div>
+					  </div> -->
+					
+
+					  <div id="page-4" class= "page four">
+					    <h2 class="heading">Awards</h2>
+					    <div class="resume-wrap d-flex ftco-animate">
+					    	<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2018-2022</span>
+		    					<h2>International Major Entrance Scholarship</h2>
+		    					<span class="position">University of British Columbia</span>
+								<ul>
+									<li>Awarded for exemplary academic achievement &amp;
+										intellectual promise, impressive extracurricular &amp;
+										community involvement.</li>
+									<li>Awarded to exceptional international students for entirety of their undergraduate
+										studies.</li>
+								</ul>
+	    					</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2020</span>
+		    					<h2>Rajan Family Award in Computer Science</h2>
+								<span class="position">University of British Columbia</span>
+								<ul>
+									<li>Awarded on recommendation of UBC's Department of
+										Computer Science.</li>
+									<li>Awarded to outstanding full-time undergraduate students
+										in Computer Science who have demonstrated exemplary
+										community service, especially for women.</li>
+								</ul>
+							</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2019</span>
+		    					<h2>Faculty of Science International Student Scholarship</h2>
+								<span class="position">University of British Columbia</span>
+								<ul>
+									<li>Awarded up to $10,000 to continuing international students 
+										in the Faculty of Science.</li>
+									<li>The scholarships are made on recommendation of the
+										Faculty of Science.</li>
+									<li>Awarded to students demonstrating strong academic
+										achievement, engagement in the Faculty &amp; potential to
+										make scholarly contributions in their field of study.</li>
+								</ul>
+							</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2019</span>
+		    					<h2>Trek Excellence Scholarship</h2>
+								<span class="position">University of British Columbia</span>
+								<ul>
+									<li>Awarded every year to students in top 5% of their 
+										undergraduate year, faculty &amp; school.</li>
+								</ul>
+							</div>
+	    				</div>
+	    				<div class="resume-wrap d-flex ftco-animate">
+	    					<div class="icon d-flex align-items-center justify-content-center">
+					    		<span class="flaticon-ideas"></span>
+					    	</div>
+					    	<div class="text pl-3">
+		    					<span class="date">2019</span>
+		    					<h2>J Fred Muir Memorial Scholarship in Science</h2>
+								<span class="position">University of British Columbia</span>
+								<ul>
+									<li>Awarded to exceptional students on recommendation of
+									the Faculty of Science.</li>
+								</ul>
+							</div>
+	    				</div>
+					  </div>
+
+					  <div id="page-5" class= "page five">
+						<h2 class="heading">Coursework</h2>
+					  	<div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+							  <span class="flaticon-ideas"></span>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">2018-2020</span>
+							  <h2>University Courses</h2>
+							  <span class="position">The University of British Columbia</span>
+							  <dl class="row">
+									<dt class="col-sm-3">Completed</dt>
+									<dd class="col-sm-9">
+										<ul class="list-unstyled">
+											<li>Basic Data Structures &amp; Algorithms</li>
+											<li>Introduction to Computer Systems</li>
+											<li>Software Construction</li>
+											<li>Models of Computation</li>
+											<li>Functional Programming - Racket</li>
+											<li>Linear Algebra</li>
+											<li>Calculus</li>
+											<li>Elementary Statistics</li>
+										</ul>
+									</dd>
+									<dt class="col-sm-3">Currently enrolled</dt>
+									<dd class="col-sm-9">
+										<ul class="list-unstyled">
+											<li>Intermediate Algorithm Design &amp; Analysis</li>
+											<li>Introduction to Software Engineering</li>
+											<li>Computer Hardware and Operating Systems</li>
+											<li>Introduction to Relational Databases</li>
+											<li>Advanced Relational Databases</li>
+											<li>Internet Computing</li>
+											<li>Machine Learning and Data Mining</li>
+											<li>Computer Vision</li>
+											<li>Entrepreneurship</li>
+										</ul>
+									</dd>
+								</dl>
+						  </div>
+					  </div>
+
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+							  <span class="flaticon-ideas"></span>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">2019-2020</span>
+							  <h2>Self-Learning</h2>
+							  <span class="position">Udemy, Coursera, freeCodeCamp, Codecademy</span>
+							  <dl class="row">
+								<dt class="col-sm-3">Web development</dt>
+								<dd class="col-sm-9">
+									<ul class="list-unstyled">
+										<li>Modern React with Redux</li>
+										<li>Front-End Web UI Frameworks and Tools: Bootstrap 4</li>
+										<li>Front-End Web Development with React</li>
+										<li>Multiplatform Mobile App Development with React Native</li>
+										<li>Server-side Development with NodeJS, Express and MongoDB</li>
+										<li>Programming Foundations with JavaScript, HTML &amp; CSS</li>
+										<li>Responsive Web Design</li>
+										<li>Introduction to JavaScript</li>
+									</ul>
+								</dd>
+								<dt class="col-sm-3">iOS</dt>
+								<dd class="col-sm-9">
+									<ul class="list-unstyled">
+										<li>iOS 13 &amp; Swift 5 - The Complete iOS App Development Bootcamp(Ongoing)</li>
+									</ul>
+								</dd>
+								<dt class="col-sm-3">Android</dt>
+								<dd class="col-sm-9">
+									<ul class="list-unstyled">
+										<li>The Complete Android Oreo Developer Course(Ongoing)</li>
+									</ul>
+								</dd>
+								<dt class="col-sm-3">Python</dt>
+								<dd class="col-sm-9">
+									<ul class="list-unstyled">
+										<li>Programming for Everybody (Getting Started with Python)</li>
+										<li>Python Data Structures</li>
+										<li>Using Python to Access Web Data</li>
+										<li>Using Databases with Python</li>
+									</ul>
+								</dd>
+								<dt class="col-sm-3">IoT</dt>
+								<dd class="col-sm-9">
+									<ul class="list-unstyled">
+										<li>Introduction to the Internet of Things and Embedded Systems</li>
+									</ul>
+								</dd>
+								<dt class="col-sm-3">JPMorgan Chase&amp;Co.</dt>
+								<dd class="col-sm-9">
+									<ul class="list-unstyled">
+										<li>Software Engineering Virtual Experience</li>
+										<ul>
+											<li>Establishing Financial Data Feeds</li>
+											<li>Frontend Web Development</li>
+											<li>Data Visualization with Perspective</li>
+										</ul>
+									</ul>
+								</dd>
+							</dl>	
+						  </div>
+					  </div>
+					</div>
+
+					<div id="page-6" class="page six">
+						<h2 class="heading">Leadership &amp; Extracurriculars</h2>
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+							  <span class="flaticon-ideas"></span>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">Sept 2019 - May 2020</span>
+							  <h2>UBC Women in Computer Science (UBC WiCS)</h2>
+							  <span class="position">University of British Columbia</span>
+							  <dl class="row">
+									<dt class="col-sm-2">Co-Founder</dt>
+									<dd class="col-sm-10">
+										<ul>
+											<li>Founded UBC WiCS with 2 other UBC students.</li>
+											<li>Hired 12 members on the executive board.</li>
+											<li>Established UBC WiCS as an affiliation group with UBC's CS department.</li>
+											<li>Marketed UBC WiCS through events, social platforms &amp; WiCS website.</li>
+											<li>Hired executive board for next academic year(2020-2021).</li>
+											<li>Established WiCS as a platform for open discussion.</li>
+											<li>Created leadership opportunities for Women in CS at UBC.</li>
+										</ul>
+									</dd>
+									<dt class="col-sm-2">President</dt>
+									<dd class="col-sm-10">
+										<ul>
+											<li>Dedicated to building an uplifting community of women in tech.</li>
+											<li>Lead UBC WiCS team to achieve weekly goals.</li>
+											<li>Collaborate with UBC's Committee for Outreach, Diversity, and Equity.</li>
+											<li>Organize biweekly social, networking &amp; career events for women in tech.</li>
+											<li>Foster community discussions.</li>
+											<li>Promote interactions on professional, social &amp; academic levels.</li>
+										</ul>
+									</dd>
+								</dl>
+						  </div>
+					  </div>
+					  <div class="resume-wrap d-flex ftco-animate">
+						  <div class="icon d-flex align-items-center justify-content-center">
+							  <span class="flaticon-ideas"></span>
+						  </div>
+						  <div class="text pl-3">
+							  <span class="date">Sept 2019 - May 2020</span>
+							  <h2>UBC WiCS Representative on CODE Committee</h2>
+							  <span class="position">UBC Committee for Outreach, Diversity, and Equity (CODE)</span>
+							  <ul>
+								  <li>Attended biweekly diversity &amp; inclusion meetings.</li>
+								  <li>Pitched ideas for UBC WiCS events.</li>
+								  <li>Updated the Committee on WiCS inner workings.</li>
+								  <li>Pitched ideas for diversity initiatives for broader CS community.</li>
+							  </ul>
+						  </div>
+					  </div>
+					</div>
+
+					</div>
+			  </div>
+    	</div>
+    </section>
+
+    <section class="ftco-section" id="services-section">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Skills</h1>
+            <h2 class="mb-4">Skills</h2>
+            <p>What I offer?</p>
+          </div>
+        </div>
+    		<div class="row">
+					<div id="front" class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#projects-section" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-analysis"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Front-end Development</h3>
+								<ul class="list-inline">
+									<li class="list-inline-item">JavaScript</li>
+									<li class="list-inline-item">HTML5</li>
+									<li class="list-inline-item">CSS3</li>
+									<li class="list-inline-item">Gulp</li>
+									<li class="list-inline-item">Grunt</li>
+									<li class="list-inline-item">Sass</li>
+									<li class="list-inline-item">LESS</li>
+									<li class="list-inline-item">jQuery</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div id="server" class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#projects-section" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-innovation"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Server-side Development</h3>
+								<ul class="list-inline">
+
+									<!-- <li class="list-inline-item">MongoDB</li> -->
+									<li class="list-inline-item">Java</li>
+									<li class="list-inline-item">Python</li>
+									<li class="list-inline-item">NodeJS</li>
+									<li class="list-inline-item">Express</li>
+									<!-- <li class="list-inline-item">Ruby</li> -->
+									<!-- <li class="list-inline-item">SQL</li> -->
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div id="ios" class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#projects-section" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ideas"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">iOS Development</h3>
+								<!-- can change to dd type list -->
+								<ul class="list-inline">
+									<li class="list-inline-item">Swift</li>
+									<li class="list-inline-item">SwiftUI</li>
+									<!-- <li class="list-inline-item">Android(Java)</li>
+									<li class="list-inline-item">Kotlin</li> -->
+								</ul>
+							</div>
+						</a>
+					</div>
+
+					<div id="android" class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#projects-section" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-idea"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Android Development</h3>
+								<ul class="list-inline">
+									<li class="list-inline-item">Java</li>
+									<li class="list-inline-item">Kotlin</li>
+									<!-- <li class="list-inline-item">SwiftUI</li> -->
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div id="framework" class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#projects-section" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-ux-design"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Frameworks, Libraries &amp; Tools</h3>
+								<ul class="list-inline">
+									<li class="list-inline-item">React</li>
+									<li class="list-inline-item">React Hooks</li>
+									<li class="list-inline-item">Redux</li>
+									<li class="list-inline-item">React Native</li>
+									<li class="list-inline-item">Bootstrap4</li>
+									<li class="list-inline-item">Reactstrap</li>
+									<li class="list-inline-item">Socket.io</li>
+
+									<!-- <li class="list-inline-item">Ruby on Rails</li> -->
+									<li class="list-inline-item">Git &amp; GitHub</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+					<div id="os" class="col-md-4 text-center d-flex ftco-animate">
+						<a href="#projects-section" class="services-1 shadow">
+							<span class="icon">
+								<i class="flaticon-flasks"></i>
+							</span>
+							<div class="desc">
+								<h3 class="mb-5">Operating Systems</h3>
+								<ul class="list-inline">
+									<li class="list-inline-item">MacOS</li>
+									<li class="list-inline-item">Windows</li>
+								</ul>
+							</div>
+						</a>
+					</div>
+				</div>
+    	</div>
+    </section>
+ 
+
+    <section class="ftco-section ftco-project" id="projects-section">
+    	<div class="container-fluid px-md-0">
+    		<div class="row no-gutters justify-content-center pb-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Projects</h1>
+            <h2 class="mb-4">Personal Projects</h2>
+            <p>Check out some of my work!</p>
+          </div>
+        </div>
+    		<div class="row no-gutters">
+    			<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/resort.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+							<h3>
+								<!-- <a href="https://beach-resort-reservation-react.netlify.app/"> -->
+									Hotel Rooms Reservation Website
+								<!-- </a> -->
+							</h3>
+							<span>Front-end Web Development</span>
+							<ul class="list-inline">
+								<li>
+								  <a href="https://beach-resort-reservation-react.netlify.app/" target="_blank" class="list-inline-item" id="project-link">Project Website</span></a>
+								</li>
+								<li>
+								  <a href="https://github.com/tashijain/Beach-Resort-React-app" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+  				</div>
+  				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/chat3.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://realtimechatbytashi.netlify.app"> -->
+									Realtime Chat Application
+								<!-- </a> -->
+							</h3>
+							<span>FullStack Web Development</span>
+							<ul class="list-inline">
+								<li>
+								  <a href="https://realtimechatbytashi.netlify.app" target="_blank" class="list-inline-item" id="project-link">Project Website</span></a>
+								</li>
+								<li>
+								  <a href="https://github.com/tashijain/realtime-chat-app" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+  				</div>
+    			<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/blog.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Blog website
+								<!-- </a> -->
+							</h3>
+							<span>Front-end Web Development</span>
+							<ul class="list-inline">
+								<li>
+								  <a href="https://blogbytashi.netlify.app" target="_blank" class="list-inline-item" id="project-link">Project Website</span></a>
+								</li>
+								<li>
+								  <a href="https://github.com/tashijain/blog-react" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+				</div>
+				
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/brainTrainer2.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Brain Trainer Timed Game
+								<!-- </a> -->
+							</h3>
+							<span>Android(Java) Development</span>
+							<ul class="list-inline">
+								<li>
+								  <a href="https://github.com/tashijain/BrainTrainerApp" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+				</div>
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/tic-tac-toe2.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Tic-Tac-Toe Game
+								<!-- </a> -->
+							</h3>
+							<span>Front-end & Android Development</span>
+							<ul class="list-inline">
+								
+								<li>
+								  <a href="https://github.com/tashijain/TicTacToe-React" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+				</div>
+				
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/xylophone2.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Xylophone iOS App
+								<!-- </a> -->
+							</h3>
+							<span>iOS development</span>
+							<ul class="list-inline">
+								<li>
+								  <a href="https://github.com/tashijain/xylophone-ios-app" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+				</div>
+				
+				
+			
+				
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/restaurant.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Restaurant Website
+								<!-- </a> -->
+							</h3>
+							<span>Front-end Web Development</span>
+							<ul class="list-inline">
+							
+								<li>
+								  <a href="https://github.com/tashijain/restaurant-app-bootstrap" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+				</div>
+				
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/quizzler2.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3>
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Quizzler iOS app
+								<!-- </a> -->
+							</h3>
+							<span>iOS(Swift) Development</span>
+							<ul class="list-inline">
+								
+								<li>
+								  <a href="https://github.com/tashijain/Quizzler" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+				</div>
+				
+				<div class="col-md-4">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/filters.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3 >
+								<!-- <a href="https://blogbytashi.netlify.app"> -->
+									Filters website
+								<!-- </a> -->
+							</h3>
+							<span>My First Project - JavaScript, CSS, HTML</span>
+							<ul class="list-inline">
+								<li>
+								  <a href="https://codepen.io/tashjain88/full/ZgBxwJ" target="_blank" class="list-inline-item" id="project-link">Project Website</span></a>
+								</li>
+								<li>
+								  <a href="https://github.com/tashijain/Filters-Webpage" target="_blank" class="list-inline-item" id="project-link">GitHub</a>
+								</li>
+							</ul>
+	    				</div>
+    				</div>
+    			</div>
+			</div>
+    			
+    			
+    		
+    	</div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt ftco-no-pb ftco-counter img" id="section-counter">
+    	<div class="container-fluid px-md-5">
+				<div class="row d-md-flex align-items-center">
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="25">0</strong>
+                <span>Honors &amp; Awards</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="30">0</strong>
+                <span>Computer Science Courses</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="1100">0</strong>
+                <span>Social Media Connections</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-md d-flex justify-content-center counter-wrap ftco-animate">
+            <div class="block-18 shadow">
+              <div class="text">
+                <strong class="number" data-number="3">0</strong>
+                <span>Countries Visited</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-		</div>
+	</section>	
+
+	<!-- <section class="ftco-section" id="certificates-section">
+		<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+				<div class="col-md-12 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Certificates</h1>
+				<h2 class="mb-4">Certificates</h2>
+				<p></p> 
+				</div>
+			</div>
+			<div class="row no-gutters justify-content-center align-items-center">
+				<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="5000">
+				<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img id="cert-img" class="d-block w-100" src="images/P4E.png" alt="Programming for Everybody (Python)">
+				</div> -->
+				<!-- <div class="carousel-item">
+					<img class="d-block w-100 cert-img" src="images/JPMC.png" alt="JPMorgan Chase &amp; Co.">
+				</div> -->
+				<!-- <div class="carousel-item">
+					<img id="cert-img" class="d-block w-100" src="images/PythonDS.png" alt="Python Data Structures">
+				</div>
+				<div class="carousel-item">
+					<img id="cert-img" class="d-block w-100 " src="images/PythonWebData.png" alt="Python Web Data">
+				</div> -->
+				<!-- <div class="carousel-item">
+					<img class="d-block w-100 cert-img" src="images/IoT.png" alt="IoT &amp; Embedded Systems">
+				</div>
+				<div class="carousel-item">
+					<img class="d-block w-100 cert-img" src="images/JSDuke.jpeg" alt="JavaScript, HTML &amp; CSS">
+				</div> -->
+				<!-- </div>
+				<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+				<span id="carousel-control-prev-icon-cert" class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+				</a>
+				<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+				<span id="carousel-control-prev-icon-cert" class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+				</a>
+				</div>	
+			</div>			
+	</section> -->
+
+
+    <section class="ftco-section" id="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5 pb-5">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Blog</h1>
+            <h2 class="mb-4">My Blog</h2>
+            <p>Check out my articles on Medium!</p>
+          </div>
+        </div>
+        <div class="row d-flex">
+          <div class="col-md-6 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="https://medium.com/@tashjain88/canadian-undergrad-tech-conference-789df5408172?sk=8ce1f6fc62537b3579514e649dfadd59" class="block-20" style="background-image: url('images/cutc2.png');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+				<h3 class="heading">
+					<a href="https://medium.com/@tashjain88/canadian-undergrad-tech-conference-789df5408172?sk=8ce1f6fc62537b3579514e649dfadd59">
+						Canadian Undergraduate Technology Conference
+					</a>
+				</h3>
+                <!-- <h3 class="heading"><a href="single.html">Canadian Undergraduate Tech Conference</a></h3> -->
+                <div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-3">July 22, 2020</span>
+	                	<a href="https://medium.com/@tashjain88" class="mr-3"> Tashi Jain</a>
+	                	<a href="https://medium.com/@tashjain88" class="meta-chat"><span class="icon-chat"></span> Author</a>
+	                </p>
+                </div>
+				<p>Welcome to the world of virtual conferences! Listening to such honest, candid, and 
+					enthralling conversations from amazing individuals from such diverse backgrounds 
+					has been priceless.</p>
+			</div>
+            </div>
+          </div>
+          <!-- <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry justify-content-end">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_2.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">Sept. 12, 2019</span>
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-md-4 d-flex ftco-animate">
+          	<div class="blog-entry">
+              <a href="single.html" class="block-20" style="background-image: url('images/image_3.jpg');">
+              </a>
+              <div class="text mt-3 float-right d-block">
+                <h3 class="heading"><a href="single.html">Why Lead Generation is Key for Business Growth</a></h3>
+                <div class="d-flex align-items-center mb-3 meta">
+	                <p class="mb-0">
+	                	<span class="mr-2">Sept. 12, 2019</span>
+	                	<a href="#" class="mr-2">Admin</a>
+	                	<a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a>
+	                </p>
+                </div>
+                <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
 	</section>
 
-  <!-- GitHub Section -->
-  <section class="min-padding-top bg-dark" id="github">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-12 text-center">
+	<!-- <section class="ftco-section ftco-project" id="certificates-section">
+    	<div class="container-fluid px-md-5">
+    		<div class="row justify-content-center py-5 mt-5">
+          <div class="col-md-12 heading-section text-center ftco-animate">
+          	<h1 class="big big-2">Certificates</h1>
+            <h2 class="mb-4">Certificates</h2>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> 
+          </div>
+        </div>
+    		<div class="row">
+    			<div class="col-md-3">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/P4E.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Programming for Everybody (Python)</a></h3>
+	    					<span>University of Michigan</span>
+	    				</div>
+    				</div>
+  				</div>
+  				<div class="col-md-3">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/PythonDS.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Python Data Structures</a></h3>
+	    					<span>University of Michigan</span>
+	    				</div>
+    				</div>
+  				</div>
 
-          <!-- Tweaking this part so the title links straight to my GitHub
-          page, without adding the silly extra "CLICK THIS ICON" text that was
-          there before. -->
-          <h2 class="section-heading">
-            <a class="text-white-link" href="https://github.com/JasonD94" class="text-white">GitHub: JasonD94
-              <i class="fa fa-1x fa-github-square" style="color:white"></i>
-            </a>
-          </h2>
-          <hr class="light">
+    			<div class="col-md-3">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/PythonWebData.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Using Python to Access Web Data</a></h3>
+	    					<span>University of Michigan</span>
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/JSDuke.jpeg);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Programming Foundations with JavaScript, HTML &amp; CSS</a></h3>
+	    					<span>Duke University</span>
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/JPMC.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Software Engineering Virtual Experience</a></h3>
+	    					<span>JPMorgan Chase &amp; Co.</span>
+	    				</div>
+    				</div>
+    			</div>
+    			<div class="col-md-3">
+    				<div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/IoT.png);">
+    					<div class="overlay"></div>
+	    				<div class="text text-center p-4">
+	    					<h3><a href="#">Introduction to IoT &amp; Embedded Systems</a></h3>
+	    					<span>University of California, Irvine</span>
+	    				</div>
+    				</div>
+				</div> -->
+<!-- 				
+    		</div>
+    	</div>
+	</section> -->
+	
+	<!-- <section class="ftco-section" id="blog-section">
+
+	</section> -->
+
+
+    <section class="ftco-section ftco-hireme img" style="background-image: url(images/bg_1.jpg)">
+    	<div class="overlay"></div>
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8 ftco-animate text-center">
+						<h2>Open for <span>Summer 2021</span> software engineering roles</h2>
+						<p class="mb-0"><a href="mailto:tashjain88@gmail.com" class="btn btn-primary py-3 px-5">Get in Touch</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+      <div class="container">
+      	<div class="row justify-content-center mb-5 pb-3">
+          <div class="col-md-7 heading-section text-center ftco-animate">
+            <h1 class="big big-2">Contact</h1>
+			<h2 class="mb-4">Contact Me</h2>
+			<p>Let's chat! Waiting to hear from you :)</p>
+			<ul class="ftco-footer-social list-unstyled mt-5">
+					<li id="contact-icon" class="ftco-animate"><a href="https://www.linkedin.com/in/tashijain88/" target="_blank"><span class="icon-linkedin"></span></a></li>
+					<li id="contact-icon" class="ftco-animate"><a href="https://www.github.com/tashijain/" target="_blank"><span class="icon-github"></span></a></li>
+					<li id="contact-icon" class="ftco-animate"><a href="https://www.facebook.com/tashjain88/" target="_blank"><span class="icon-facebook"></span></a></li>
+					<li id="contact-icon" class="ftco-animate"><a href="https://www.instagram.com/tashjain88/" target="_blank"><span class="icon-instagram"></span></a></li>
+			</ul>
+          </div>
+        </div>
+
+        <div class="row d-flex contact-info mb-5">
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-map-signs"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Address</h3>
+		            <p id="contact-address">Vancouver, BC, Canada</p>
+		          </div>
+	          </div>
+          </div>
+          <!-- <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-phone2"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Phone Number</h3>
+		            <p><a href="tel://123456789">+1123456789</a></p>
+	            </div>
+	          </div>
+          </div> -->
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-paper-plane"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Email Address</h3>
+		            <p><a href="mailto:tashjain88@gmail.com">tashjain88@gmail.com</a></p>
+		          </div>
+	          </div>
+          </div>
+          <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+          	<div class="align-self-stretch box text-center p-4 shadow">
+          		<div class="icon d-flex align-items-center justify-content-center">
+          			<span class="icon-globe"></span>
+          		</div>
+          		<div>
+	          		<h3 class="mb-4">Website</h3>
+		            <p><a href="#">tashijain.github.io</a></p>
+	            </div>
+	          </div>
+          </div>
+        </div>
+
+		<!-- Github hosts staic websites so cannot use contact forms -->
+        <!-- <div class="row no-gutters block-9">
+          <div class="col-md-6 order-md-last d-flex">
+            <form action="#" class="bg-light p-4 p-md-5 contact-form">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Name">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Your Email">
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Subject">
+              </div>
+              <div class="form-group">
+                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+              </div>
+            </form>
+          
+          </div>
+
+          <div class="col-md-6 d-flex">
+          	<div class="img" style="background-image: url(images/introimg.jpeg);"></div>
+          </div>
+        </div> -->
+      </div>
+    </section>
+		
+
+    <footer class="ftco-footer ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">About</h2>
+			  <p>Hi! I'm Tashi, a rising junior at the University of British Columbia, Vancouver. 
+				  Tech enthusiast competent in Web and Mobile development. Passionate about role of Women in tech.</p>
+			  <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+				<li class="ftco-animate"><a href="https://www.linkedin.com/in/tashijain88/" target="_blank"><span class="icon-linkedin"></span></a></li>
+				<li class="ftco-animate"><a href="https://www.github.com/tashijain/" target="_blank"><span class="icon-github"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/tashjain88/" target="_blank"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/tashjain88/" target="_blank"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-4">
+              <h2 class="ftco-heading-2">Links</h2>
+              <ul class="list-unstyled">
+                <li><a href="#"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Skills</a></li>
+                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
+                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Skills</h2>
+              <ul class="list-unstyled">
+				<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Software Developer</a></li>
+				<li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Front-end Developer</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Server-side Developer</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>iOS Developer</a></li>
+                <li><a href="#services-section"><span class="icon-long-arrow-right mr-2"></span>Android Developer</a></li> 
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Have Questions?</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Vancouver, BC, Canada</span></li>
+	                <!-- <li><a href="tel://123456789"><span class="icon icon-phone"></span><span class="text">+123456789</span></a></li> -->
+	                <li><a href="mailto:tashjain88@gmail.com"><span class="icon icon-envelope"></span><span class="text">tashjain88@gmail.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- GitHub links below -->
-    <div class="container-fluid p-0">  <!-- p-0 makes the images go edge to edge (no padding) -->
-      <div class="row no-gutters">
-
-        <!--
-						Redoing the links arrangement. Current thought is it should go:
-						downing.io <-> GUI II <-> Scrabble
-						UML Alerts <-> GUI I  <-> Racket Weather
-
-						In the future, add DB1 and DB2 projects, and maybe one other project
-						to complete the 3rd full row. Possibly College repository. This should
-						be possible after graduation. Could also add the DB2 app.
-
-						3rd future row would be:
-						DB2 Phase 2 <-> DB2 Android app <-> College
-
-						4th row could be:
-						React Tutorial <-> MEAN Project <-> another project
-
-						5th row could be:
-						HTML-Apps <-> Teaching <-> iSENSE-API
-
-						In the future, maybe add ECG lab work too (Teaching and API repositories)
-				-->
-
-        <!-- First Link: source code for downing.io -->
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="https://github.com/JasonD94/jasond94.github.io">
-            <!--  Same photo as the header, but resized.
-                  URL: https://upload.wikimedia.org/wikipedia/commons/f/f5/Free-ride.jpg
-            -->
-            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/downing-io.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  downing.io
-                </div>
-                <div class="project-name">
-                  Source code for this personal website
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Second Link: source code for GUI II Project (Ski Maps) -->
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="http://downing.io/Ski-Maps/">
-            <!--  Awesome photo of JT and random skiers from Google Photos
-                  (Personal photo taken March 15 2017 at Cannon Mt)
-                  Public URL: https://goo.gl/photos/RXYDMpAVjZmXL4MD6
-            -->
-            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/ski-maps.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Ski Maps
-                </div>
-                <div class="project-name">
-                  GUI II Project. Front-end web project for showing skiing conditions.
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Third Link: source code for GUI I last assignment (Scrabble) -->
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="https://github.com/JasonD94/scrabble">
-            <!--  Thumbnail from Wikipedia
-            URL: https://upload.wikimedia.org/wikipedia/commons/5/5d/Scrabble_game_in_progress.jpg
-            -->
-            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/scrabble.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Scrabble
-                </div>
-                <div class="project-name">
-                  Full implementation of the Scrabble board game.
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Fourth Link: source code for UMass Lowell Mobile Dev class (UML Alerts) -->
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="https://github.com/JasonD94/UML-Alerts">
-            <!-- Thumbnail from alphr.com
-            URL: http://cdn1.alphr.com/sites/alphr/files/2016/05/best_android_apps.jpg
-            -->
-            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/uml-alerts.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  UML Alerts
-                </div>
-                <div class="project-name">
-                  Android App for UMass Lowell Android App Development class.
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Fifth Link: source code for entire GUI I class (GUI I) -->
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="https://github.com/JasonD94/GUI">
-            <!-- Thumbnail from dtelepathy.com
-            URL: http://www.dtelepathy.com/blog/wp-content/uploads/2015/06/Technique-for-Faster-Web-Development.jpg -->
-            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/gui.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  GUI
-                </div>
-                <div class="project-name">
-                  GUI I GitHub repository. Front-end web pages.
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-
-        <!-- Sixth Link: source code for OPL Project (Racket Weather) -->
-        <div class="col-lg-4 col-sm-6">
-          <a class="portfolio-box" href="https://github.com/oplS16projects/Racket-Weather">
-            <!-- Thumbnail from gannett-cdn.com
-            URL: http://www.gannett-cdn.com/-mm-/3526533239800dac0c978150377d099025f1e52c/c=52-700-4303-3102&r=x1683&c=3200x1680/local/-/media/USATODAY/None/2014/10/03/1412368123000-Mesostorm-Lightning.jpg -->
-            <img class="img-responsive" width="100%" height="auto" src="img/portfolio/thumbnails/racket-weather.jpg" alt="">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  Racket Weather
-                </div>
-                <div class="project-name">
-                  OPL Project. Visualizations in Racket using data from
-                  the OpenWeatherMap API.
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact section -->
-  <section class="min-padding" id="contact">
-    <div class="container">
+    </footer>
     
-      <!-- Contact Jason Row -->
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <h2 class="section-heading">
-          
-          <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
-            Contact Jason</h2>
-          <hr class="primary">
-          <p>If you have an interesting opportunity in the <strong>Boston area</strong>, you
-            can send / spam (🙁) him a message using the form below.</p>
-          
-          <!-- Really avoiding spam by sending emails to the spam box
-               Docs URL: https://formspree.io/ 
-               Also, Bootstrap forms: https://getbootstrap.com/docs/3.3/css/#forms -->
-          <form action="https://formspree.io/info@downing.io" method="POST" class="form-horizontal" role="form">
-            <!-- Need a name, reply to email, and a message -->
-            <div class="form-group">
-              <input type="text" name="name" placeholder="Your Name" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <input type="email" name="email" placeholder="Your Email" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <textarea name="message" placeholder="Your message" class="form-control" required></textarea>
-            </div>
-            <!-- Hidden elements here -->
-            <input type="hidden" name="_subject" value="New email from Contact Me Form!" class="form-control">
-            <input type="hidden" name="_next" value="thanks.html" />
-            <!-- Submit button -->
-            <div class="form-group">
-              <input type="submit" value="Email Jason" class="btn btn-primary btn-xl">
-            </div>
-          </form>
-        </div>
-      </div>
-      
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <p>You can also find his personal email, LinkedIn and GitHub below too.</p>
-        </div>
-      </div>
-      
-      <!-- Email, LinkedIn, and GitHub links -->
-      <div class="row">
-      
-        <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
-          <a href="mailto:jason[AT]downing[DOT]io">
-            <i class="fa fa-envelope fa-4x sr-icons"></i>
-          </a>
-          <p><a href="mailto:jason[AT]downing[DOT]io" class="text-blue">Email</a></p>
-        </div>
-        
-        <div class="col-4 col-sm-4 col-lg-2 text-center">
-          <a href="https://www.linkedin.com/in/jasonpdowning">
-            <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
-          </a>
-          <p><a href="https://www.linkedin.com/in/jasonpdowning" class="text-blue">LinkedIn</a></p>
-        </div>
-        
-        <div class="col-4 col-sm-4 col-lg-2 text-center">
-          <a href="https://github.com/JasonD94">
-            <i class="fa fa-github-square fa-4x sr-icons"></i>
-          </a>
-          <p><a href="https://github.com/JasonD94" class="text-blue">GitHub</a></p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!--  THIS IS THE FOOTER - displays a copyright notice and
-        that Bootstrap powers this web page.
-        
-        6/16/2018: Added new line for the Source on Github... part, with margin bottom
-                   set to 1 (awesome new bootstrap 4 mb-1 class)-->
-  <div class="container">
-    <p class="text-center text-muted text-small mb-1">
-      Jason Downing &copy; 2015 - 2020. All rights reserved.
-      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
-    </p>
-    <p class="text-center text-muted text-small">
-      Source on <a href="https://github.com/JasonD94/jasond94.github.io" class="text-blue">GitHub</a>.
-      Theme based on the
-      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
-      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
-    </p>
-  </div>
-
-  <!-- 6/15/2018: Updated jQuery, added Popper.js, and updated Bootstrap JS to 4.1.1 -->
-  <!-- Also pulling in the Bootstrap 4 update from Start Bootstrap too
-       https://github.com/BlackrockDigital/startbootstrap-creative  -->
-       
-  <!-- jQuery 3.3.1 -->
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-          crossorigin="anonymous"></script>
   
-  <!-- Bootstrap 4.1 JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  
-  <!-- Plugin & Theme JavaScript (With Bootstrap 4 Update) -->
-  <script src="js/jquery.easing.min.js"></script>
-  <script src="js/scrollreveal.min.js"></script>
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/carousel-custom.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
   <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/creative.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
   
-</body>
+  <script src="js/main.js"></script>
+    
+  </body>
 </html>
+
+
